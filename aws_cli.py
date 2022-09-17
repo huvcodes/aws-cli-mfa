@@ -45,7 +45,7 @@ print(f'{Fore.CYAN}{Style.BRIGHT}\n---------------------------------------------
 print(f'{Fore.CYAN}{Style.BRIGHT}Welcome to AWS CLI 2F authentication !\nPlease read the pre-requisites and/or assumptions before proceeding.')
 print(f'{Fore.CYAN}{Style.BRIGHT}----------------------------------------------------------------------------------------------')
 
-# Block for Welcome Console Print statements - End
+# Block for Welcome screen print statements - End
 # -----------------------------------------------------------------------------------------
 
 

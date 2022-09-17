@@ -32,8 +32,12 @@ Python script to ease (automate) the process of 2FA(MFA) authenticated session f
   - Run the script using the command,
     - ```python aws_cli.py``` (for Windows OS)
     - ```awscli.py``` (for Linux and Mac OS)
-  - You will see the welcome message and prompt to provide the profile name.<img src="/images/welcome_screen.jpg">
-  - Provide the profile name 
+  - If any of the required files (config, credentials, temp_credentials) are not available under .aws directory, the script will fail with errors.
+    ![](/images/file_missing_errors.png?raw=true)
+  - You will see the welcome message and prompt to provide the profile name.
+    ![](/images/welcome_screen.png?raw=true)
+  - Specify the profile name which you want to connect to. If you press enter without specifying any value, it will authenticate you with "default" settings as per your config and credentials files.
+
 
 ## Sample config and credentials file
 ### config file
