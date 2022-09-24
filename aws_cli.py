@@ -72,7 +72,7 @@ if (not os.path.exists(credentials_file)):
 # Block to set AWS profile - Begin
 
 print(f"{Fore.YELLOW}{Style.DIM}\nNOTE: Checking for AWS profile preference.")
-print(f"{Fore.YELLOW}{Style.DIM}If you do not specify any profile name, the script will authenticate you with 'default' AWS profile settings specified in your credentials file.\n")
+print(f"{Fore.YELLOW}{Style.DIM}If you do not specify any profile name, script will authenticate you with 'default' AWS profile settings specified in credentials file.\n")
 print(f'Specify your AWS profile name : ', end = '')
 aws_profile = input()
 
