@@ -1,5 +1,5 @@
 # aws-cli-mfa
-Python script to ease (automate) the process of 2FA(MFA) authenticated session for AWS CLI. The utility script is implemented as per the guidance in this [official AWS blog](https://aws.amazon.com/premiumsupport/knowledge-center/authenticate-mfa-cli).
+Python script to ease (automate) the process of 2FA(MFA) authenticated session for AWS CLI. The utility script is implemented as per instructions in this [official AWS blog](https://aws.amazon.com/premiumsupport/knowledge-center/authenticate-mfa-cli).
 
 
 ### Pre-requisites
@@ -100,15 +100,19 @@ This python script has been tested on Windows operating system. Although the scr
 #### Running the script
 01. Run the script using command,
     ```python .\aws_cli.py``` (for Windows OS)
-    ```./awscli.py``` (for non-Windows OS)
-02. If any of the required files (```config```, ```credentials```) are not available under ```.aws``` directory, the script will fail with errors.
+    ```./awscli.py``` (for non-Windows OS)  
+02. If required files (```config```, ```credentials```) are not available under ```.aws``` directory, script will fail with errors.
+      
     ![Config and Credentials files missing](https://github.com/huvcodes/images-ss/blob/main/aws-cli-mfa/file_missing_errors.png)
 03. If required files are available, you will see the welcome message and prompt to provide the profile name.
+      
     ![Welcome message](https://github.com/huvcodes/images-ss/blob/main/aws-cli-mfa/welcome_screen.png)
 04. Specify the profile name which you want to connect to. If you press enter without specifying any value, it will authenticate you with "default" settings as per your config and credentials files.
     - If you provide invalid profile name, the script will fail with an error.
+        
       ![Invalid Profile Name](https://github.com/huvcodes/images-ss/blob/main/aws-cli-mfa/invalid_profile_name.png)
     - If profile name and configuration is correct, the script will prompt you to provide 2FA(MFA) code.
+        
       ![Valid Profile Name](https://github.com/huvcodes/images-ss/blob/main/aws-cli-mfa/valid_profile_name.png)
 05. Enter the 2FA(MFA) code
     - For valid 2FA(MFA) code, you will be successfully authenticated with AWS CLI.
@@ -120,9 +124,11 @@ This python script has been tested on Windows operating system. Although the scr
       aws_secret_access_key = <random generated key>
       aws_session_token = <random generated token>
       ```
+        
       ![STS Token](https://github.com/huvcodes/images-ss/blob/main/aws-cli-mfa/sts_token.png)
     - A copy of the credentials file will be backed up under ```C:\Users\<your_home_directory>\.aws\credentials_backup``` directory
       - You may delete these backup files only keeping the last few (or recent copies) for your reference.
+        
       ![Credentials Backup](https://github.com/huvcodes/images-ss/blob/main/aws-cli-mfa/credentials_backup.png)
 06. Run few AWS CLI commands to test your 2FA authentication.
 07. After your AWS CLI session is expired, repeat steps 1-6.
