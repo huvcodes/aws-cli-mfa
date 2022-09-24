@@ -94,8 +94,8 @@ This python script has been tested on Windows operating system. Although the scr
 #### Preparation
   - Download and save the script in any location of your choice.
     - For ease of use, save it under ```.aws``` directory where your config and credentials files are also available.
-  - ```config``` file under .aws directory is configured as illustrated [in this section](## Structuring your config file).
-  - ```credentials``` file under ```.aws``` directory is configured as illustrated [in this section](## Structuring your credentials file).
+  - ```config``` file under ```.aws``` directory is configured as illustrated [in this section](#structuring-your-config-file).
+  - ```credentials``` file under ```.aws``` directory is configured as illustrated [in this section](#structuring-your-credentials-file).
 
 #### Running the script
 01. Run the script using command,
