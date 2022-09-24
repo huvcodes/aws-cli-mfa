@@ -17,7 +17,8 @@
 #
 # Assumptions:
 # -----------------
-# This python script has been tested on Windows operating system. Although the script might work as-is on a non-windows platform, minor changes may be needed to get the script working.
+# This python script has been tested on Windows operating system.
+# Although the script might work as-is on a non-windows platform, minor changes may be needed to get the script working.
 #
 
 import colorama, json, os, shutil, subprocess, sys
@@ -70,7 +71,8 @@ if (not os.path.exists(credentials_file)):
 # -----------------------------------------------------------------------------------------
 # Block to set AWS profile - Begin
 
-print(f"{Fore.YELLOW}{Style.DIM}\nNOTE: Checking for AWS profile preference.\nIf you do not specify any profile name, the script will authenticate you with 'default' AWS profile settings specified in your credentials file.\n")
+print(f"{Fore.YELLOW}{Style.DIM}\nNOTE: Checking for AWS profile preference.")
+print(f"{Fore.YELLOW}{Style.DIM}If you do not specify any profile name, the script will authenticate you with 'default' AWS profile settings specified in your credentials file.\n")
 print(f'Specify your AWS profile name : ', end = '')
 aws_profile = input()
 
